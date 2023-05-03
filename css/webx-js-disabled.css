@@ -1,0 +1,136 @@
+.webx-js-disabled {
+    --webx-point: 8px;
+    --webx-border-radius: calc(var(--webx-point) * 2);
+    --webx-thin-border: 1px;
+    --webx-separator-common: gray;
+    --webx-box-shadow-color: rgba(0, 0, 0, 0.11);
+    --webx-block-border: 0 0 0 var(--webx-thin-border) var(--webx-separator-common);
+    --webx-block-box-shadow: 0 calc(var(--webx-point) / 2) calc(var(--webx-point) * 0.6) calc(var(--webx-point)*0.3) var(--webx-box-shadow-color);
+    --webx-block-effects: var(--webx-block-border), var(--webx-block-box-shadow);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: url("../img/diagobg.png");
+    font-family: 'TT Commons';
+    box-sizing: border-box;
+}
+
+.webx-js-disabled .webx-block{
+    --padding-y: 1;
+    --padding-x: 10;
+    --enable-x-paddings: 1;
+    padding: calc(var(--webx-point) * var(--padding-y)) calc(var(--webx-point) * var(--padding-x));
+    border-radius: var(--webx-border-radius);
+    box-shadow: var(--webx-block-effects);
+    --width: 90;
+    max-width: calc(var(--webx-point) * var(--width));
+    margin: calc(var(--webx-point) * 2) calc(var(--webx-point) * 2 * var(--enable-x-paddings));
+    position: relative;
+    background: #FFFFFF;
+    padding-bottom: calc(var(--webx-point) * 8);
+}
+
+.webx-js-disabled .webx-paragraph{
+    --font-size: 3;
+    --padding-y: 0.5;
+    --padding-x: 6;
+    font-size: calc(var(--webx-point) * var(--font-size));
+    padding: calc(var(--webx-point) * var(--padding-y)) calc(var(--webx-point) * var(--padding-x));
+}
+
+.webx-js-disabled .webx-headline {
+    --height: 8;
+    --font-size: 7;
+    --padding-y: 1;
+    --padding-x: 6;
+    font-size: calc(var(--webx-point) * var(--font-size));
+    padding: calc(var(--webx-point) * var(--padding-y)) calc(var(--webx-point) * var(--padding-x));
+    min-height: calc(var(--webx-point) * var(--height));
+    line-height: calc(var(--webx-point) * var(--height));
+    font-weight: 600;
+}
+
+.webx-js-disabled .webx-js-disabled-webx-logo {
+    --top-value: 2;
+    --left-value: -6;
+    --size-value: 8;
+    --margin-bottom: 0;
+    margin-bottom: calc(var(--webx-point) * var(--margin-bottom));
+    position: sticky;
+    top: calc(var(--webx-point) * var(--top-value));
+    margin-top: calc(var(--webx-point) * var(--top-value));
+    margin-left: calc(var(--webx-point) * var(--left-value));
+    width: calc(var(--webx-point) * var(--size-value));
+    height: calc(var(--webx-point) * var(--size-value));
+}
+
+.webx-js-disabled .webx-js-disabled-webx-logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: calc(var(--webx-point) * 2);
+    box-shadow: var(--webx-block-box-shadow);
+}
+
+.webx-js-disabled .webx-link {
+    color: blue;
+    cursor: pointer;
+}
+.webx-js-disabled .webx-link:hover {
+    text-decoration: underline;
+}
+.webx-list .webx-list-point {
+    width: fit-content;
+}
+.webx-list .webx-list-point::before {
+    content: "✦";
+    position: relative;
+    top: 2px;
+    bottom: -2px;
+}
+
+@media screen and (max-width: 320px) {
+    .webx-js-disabled .webx-block{   
+        --enable-x-paddings: 0;
+    }
+}
+@media screen and (max-width: 425px) {
+    .webx-js-disabled .webx-block{
+        --padding-y: 1;
+        --padding-x: 1;
+    }
+    
+    .webx-js-disabled .webx-js-disabled-webx-logo {
+        --top-value: 4;
+        --left-value: 2;
+        --margin-bottom: 2;
+    }
+    .webx-js-disabled .webx-headline {
+        --font-size: 5;
+        --height: 6;
+    }
+    .webx-js-disabled .webx-paragraph {
+        --font-size: 2.7;
+        --padding-y: 1;
+        --padding-x: 1;
+    }
+}
+@media screen and (max-width: 720px) {
+    .webx-js-disabled .webx-block{
+        --padding-y: 1;
+        --padding-x: 1;
+    }
+    
+    .webx-js-disabled .webx-js-disabled-webx-logo {
+        --top-value: 4;
+        --left-value: 2;
+        --margin-bottom: 2;
+    }
+    
+    .webx-js-disabled .webx-headline {
+        --padding-x: 2;
+    }
+    .webx-js-disabled .webx-paragraph {
+        --padding-x: 2;
+    }
+}
