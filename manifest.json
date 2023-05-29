@@ -1,6 +1,6 @@
 {
-  "short_name": "dshdev",
-  "name": "doshite development",
+  "short_name": "cart-calc",
+  "name": "Калькулятор покупки",
   "icons": [
     {
       "src": "./img/favicon.svg",
