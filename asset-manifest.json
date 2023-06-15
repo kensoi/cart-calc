@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/cart-calc/static/css/main.c6559f2f.css",
-    "main.js": "/cart-calc/static/js/main.302187c9.js",
+    "main.css": "/cart-calc/static/css/main.0b7ffc46.css",
+    "main.js": "/cart-calc/static/js/main.d521fdd3.js",
     "static/js/787.7d3d9665.chunk.js": "/cart-calc/static/js/787.7d3d9665.chunk.js",
     "service-worker.js": "/cart-calc/service-worker.js",
     "index.html": "/cart-calc/index.html",
-    "main.c6559f2f.css.map": "/cart-calc/static/css/main.c6559f2f.css.map",
-    "main.302187c9.js.map": "/cart-calc/static/js/main.302187c9.js.map",
+    "main.0b7ffc46.css.map": "/cart-calc/static/css/main.0b7ffc46.css.map",
+    "main.d521fdd3.js.map": "/cart-calc/static/js/main.d521fdd3.js.map",
     "787.7d3d9665.chunk.js.map": "/cart-calc/static/js/787.7d3d9665.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6559f2f.css",
-    "static/js/main.302187c9.js"
+    "static/css/main.0b7ffc46.css",
+    "static/js/main.d521fdd3.js"
   ]
 }
